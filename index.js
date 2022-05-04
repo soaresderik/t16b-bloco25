@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
   res.status(200).json({ ok: true, port: PORT })
 })
 
+app.get('/os-cria', (req, res) => {
+  res.status(200).json({ ok: "😎", port: PORT })
+})
+
 app.get('/env', (req, res) => {
   console.log({ NODE_ENV })
   res.status(200).json({ ok: true, env: NODE_ENV })
