@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3001;
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
 app.get('/', (req, res) => {
-  res.status(200).json({ ok: true, port: PORT });
+  res.status(200).json({ message: 'Deploy pelo GITHUB 😎' });
 });
 
 app.get('/os-cria', (req, res) => {
