@@ -13,7 +13,7 @@ app.get('/os-cria', (req, res) => {
   res.status(200).json({ ok: '😎', port: PORT });
 });
 
-app.get('/env', (req, res) => {
+app.get("/env", (req, res) => {
   res.status(200).json({ ok: true, env: NODE_ENV });
 });
 
